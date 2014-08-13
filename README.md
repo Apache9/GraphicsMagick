@@ -4,7 +4,7 @@ GraphicsMagick
 Build jemalloc
 --------------
 
-1. CFLAGS="-g -O3 -fPIC" ./configure --prefix=/home/work/image-lib-install --with-jemalloc-prefix=je_
+1. CFLAGS="-g -O3 -fPIC" ./configure --prefix=${INSTALL_DIR} --with-jemalloc-prefix=je_
 1. make
 1. make install
 
