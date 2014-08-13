@@ -47,7 +47,7 @@ $(TARFILE): $(DISTFILES)
 	-shasum $(TARFILE)
 
 clean:
-	rm -f $(OBJS) $(STATICLIB) ${SHAREDLIB}$(TARFILE) $(DLL) $(DLLIMP) $(DLLDEF)
+	rm -f $(OBJS) $(STATICLIB) ${SHAREDLIB} $(TARFILE) $(DLL) $(DLLIMP) $(DLLDEF)
 
 distclean: clean
 	rm -f config.mk
