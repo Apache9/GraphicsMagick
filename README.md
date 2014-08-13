@@ -44,3 +44,10 @@ Build GraphicsMagick
 1. append -ljemalloc to MAGICK_DEP_LIBS in Makefile
 1. make
 1. make install
+
+Build imagequant
+----------------
+
+1. replace Makefile, add config.mk
+2. make
+3. manual copy libimagequant.so and all *.h files to ${INSTALL_DIR}
