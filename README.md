@@ -50,4 +50,4 @@ Build imagequant
 
 1. replace Makefile, add config.mk
 2. make
-3. manual copy libimagequant.so and all *.h files to ${INSTALL_DIR}
+3. copy libimagequant.so and all *.h files to ${INSTALL_DIR}
