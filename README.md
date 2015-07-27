@@ -40,6 +40,7 @@ Build png16
 Build GraphicsMagick
 --------------------
 
+1. Modify coders/bmp.c, change line 1736 from `*q++=ScaleQuantumToChar(p->opacity);` to `*q++=MaxRGB-ScaleQuantumToChar(p->opacity);`
 1. CFLAGS="-g -O3 -fPIC" CPPFLAGS="-I${INSTALL_DIR}/include" LDFLAGS="-L${INSTALL_DIR}/lib" ./configure --prefix=${INSTALL_DIR} --enable-shared --without-x --without-jbig --without-jp2 --without-tiff -without-ttf --without-lcms --without-wmf --without-magick-plus-plus --disable-openmp
 1. make
 1. make install
